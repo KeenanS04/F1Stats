@@ -2,3 +2,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
+.drivers-data {
+  display: flex;
+}
