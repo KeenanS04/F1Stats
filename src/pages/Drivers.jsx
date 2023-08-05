@@ -10,7 +10,7 @@ function Drivers() {
     for (let year = new Date().getFullYear(); year >= 1950; year--) {
         options.push(<option value={year} key={year}>{year}</option>);
     }
-    
+
     const handleChange = (e) => {
         setSeason(e.target.value);
     }
@@ -24,7 +24,7 @@ function Drivers() {
             </select>
             <div className="drivers-data">
                 <AgTable year={season} />
-                <Chart />
+                <Chart year={season} />
             </div>
         </div>
     );
