@@ -1,8 +1,39 @@
-nav {
-  display: flex;
-  align-items: center;
+body {
+  margin: 0;
 }
 
-.drivers-data {
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #011627;
+  color: #FDF7FA;
+}
+
+.navbar--logo {
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.drivers {
+  padding: 10px 35px;
+  margin-top: 0px;
+}
+
+.drivers--titles {
+  display: flex;
+  align-items:baseline;
+}
+
+.drivers--text {
+  margin-right: 20px;
+}
+
+.drivers--data {
   display: flex;
 }
