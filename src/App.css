@@ -36,4 +36,5 @@ body {
 
 .drivers--data {
   display: flex;
+  flex-wrap: wrap;
 }

@@ -56,8 +56,13 @@ function Drivers() {
                 </select>
             </div>
             <div className="drivers--data">
-                <AgTable rows={tableRows} cols={columnDefs} />
-                <Chart roundsData={rounds} />
+                <AgTable 
+                    rows={tableRows} 
+                    cols={columnDefs}  
+                />
+                <Chart 
+                    roundsData={rounds}  
+                />
             </div>
         </div>
     );
