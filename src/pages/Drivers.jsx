@@ -25,7 +25,7 @@ function Drivers() {
     useEffect(() => {
         console.log("fetching table data")
         getTableDate(season, setDriverData);
-        getChartData(season, setRounds);
+        getChartData(season, setRounds)
     }, [season]);
 
     useEffect(() => {
@@ -48,14 +48,14 @@ function Drivers() {
 
     return (
         <div className="drivers">
-            <div className="drivers--titles">
-                <h1 className="drivers--text">Driver Standings</h1>
-                <p className="drivers--text">Season: {season}</p>
-                <select name="season" className="drivers--text" id="season" value={season} onChange={handleChange}>
+            <div className="titles">
+                <h1 className="text">Driver Standings</h1>
+                <p className="text">Season: {season}</p>
+                <select name="season" className="text" id="season" value={season} onChange={handleChange}>
                     {options}
                 </select>
             </div>
-            <div className="drivers--data">
+            <div className="data">
                 <AgTable 
                     rows={tableRows} 
                     cols={columnDefs}  
